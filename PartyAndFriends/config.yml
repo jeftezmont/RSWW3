@@ -1,11 +1,11 @@
 # You need to activate UseOwnLanguageFile to change the messages
 General:
   Language: English
-  UseOwnLanguageFile: false
+  UseOwnLanguageFile: true
   CloseInventoryOnReload: true
   SendFriendshipInvitationsByHittingAPlayer: true
   PermissionNoHide: partyandfriends.hide.nohide
-  DisableJump: false
+  DisableJump: true
   DisableFriendMSG: false
   UseSkeletonSkullForOfflinePlayer: true
   SoundForHideGUI: true
