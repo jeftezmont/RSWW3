@@ -1,0 +1,5 @@
+# Like the file says, you should not change anything in this file. Doing so will result in errors and a bad performance.
+# If you want to change the length of the clan tags or the names use the command clanadmin from the console.
+
+MaxLengthClanName: 16
+MaxLengthClanTag: 4

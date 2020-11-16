@@ -1,0 +1,328 @@
+MenuBar:
+  ClanItem:
+    Use: true
+    ItemData: IRON_CHESTPLATE
+    MetaData: 0
+    Place: 3
+    Text: '&5Open clan menu'
+    Permission: ''
+  ClanRequestsItem:
+    Use: true
+    Text: '&d&lClan-Requests'
+    ItemDataName: BOOK
+    Place: 8
+    Permission: ''
+ClansRequestInventory:
+  Name: '&dClan-Requests'
+  Min-Size: 45
+  ClanRequesterItem:
+    Color: '&e'
+    UseLeaderHead: true
+    Alternative:
+      ItemDataName: PAPER
+  NoClanRequestItem:
+    Use: true
+    ItemData: PAPER
+    MetaData: 0
+    Text: '&4You did not receive any clan requests yet.'
+ClanRequestAcceptInventory:
+  AcceptFriendRequests: '&aAccept the clan request'
+  DeclineFriendRequests: '&cDecline the clan request'
+FriendDetailViewMenu:
+  InviteIntoClanItem:
+    ItemDataName: IRON_CHESTPLATE
+    PlaceFriendDetailView: 14
+    PlacePartyDetailView: 14
+    DisplayName: '&dInvite this player into your clan'
+    MetaData: 0
+    DisabledFriends: false
+    DisabledParty: false
+Settings:
+  ClanInvitations:
+    Use: true
+    TopItem:
+      DisplayName: '&5Do you want to receive clan requests?'
+      ItemDataName: CHAINMAIL_CHESTPLATE
+      MetaData: 0
+    LowerItem:
+      AllDisplayName: '&aYou are able to receive clan requests from everybody.'
+      FriendsDisplayName: '&6You are able to receive clan requests from friends.'
+      NobodyDisplayName: '&cYou will receive no clan requests.'
+    Priority: 6
+Lore:
+  ClanName: '&7Is in the clan &e[CLAN_NAME]'
+PlaceholderCustomDesign:
+  Placeholder: '&e<[%CLAN_TAG%]&e> '
+  OnEmpty: ''
+  ClanName:
+    Placeholder: '&e<[%CLAN_NAME%]&e> '
+    OnEmpty: ''
+General:
+  ClanPrefix: '&8[&5Clan&8]&r&7 '
+  SetDisplayNames: true
+  MaxPlayersPerClan: 0
+  Clan:
+    Names:
+    - clan
+    - clans
+    Permissions: ''
+  CC:
+    Names:
+    - cc
+    - clanchat
+    Deactivated: false
+  PrintOutHelpOnError: true
+  EnableClanColors: true
+  AllowedClanColors:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+Commands:
+  ClansGUI:
+    Use: true
+    Names:
+    - clansgui
+    - clangui
+    - openclansgui
+    - openclangui
+  ClansRequestGUI:
+    Use: true
+    Names:
+    - clansrequest
+    - clansrequestgui
+  Chat:
+    Names:
+    - chat
+    - msg
+    Permission: ''
+    Deactivated: false
+  Create:
+    Names:
+    - create
+    - make
+    Permission: ''
+  Delete:
+    Names:
+    - delete
+    - remove
+    Permission: ''
+    Disabled: false
+  Decline:
+    Names:
+    - decline
+    - reject
+    - deny
+  Get:
+    Names:
+    - get
+    - getclanof
+    Permission: ''
+    Deactivated: false
+  Invite:
+    Names:
+    - invite
+    - ask
+    Permission: ''
+  Kick:
+    Names:
+    - kick
+    - kickplayer
+    Permission: ''
+    Disabled: false
+    SendMessageOnKick: true
+  Leader:
+    Names:
+    - leader
+    - promote
+    Permission: ''
+    Disabled: false
+  List:
+    Names:
+    - list
+    - info
+    Permission: ''
+    Disabled: false
+  Join:
+    Names:
+    - join
+    - enter
+    Permission: ''
+    SendJoinMessage: true
+  Leave:
+    Names:
+    - leave
+    - exit
+  Name:
+    Names:
+    - name
+    - rename
+    Permission: ''
+    Disabled: false
+  Party:
+    Names:
+    - party
+    - partyinvite
+    Permission: ''
+    Disabled: false
+  RemoveClanColor:
+    Names:
+    - removecolor
+    - rmcolor
+    Permission: ''
+    Disabled: false
+  SetClanColor:
+    Names:
+    - setcolor
+    - setclancolor
+    Permission: ''
+    Disabled: false
+  Settings:
+    Names:
+    - setting
+    - settings
+    Disabled: false
+  Stats:
+    Names:
+    - stats
+    - stat
+    Permission: ''
+    Deactivated: false
+  Tag:
+    Names:
+    - tag
+    - retag
+    Permission: ''
+    Disabled: false
+GUI:
+  OpenClanRequestMenuWithoutHavingRequests: true
+AdminCommands:
+  TopCommand:
+    Names:
+    - clanadmin
+    - clansadmin
+    Deactivated: false
+    PlayerMessage: '&cThis command needs to be executed by the console. This message
+      can be changed in the config under "AdminCommands.TopCommand.PlayerMessage"'
+  SubCommand:
+    Delete:
+      Names:
+      - delete
+      - remove
+    Kick:
+      Names:
+      - kick
+      - removefromclan
+    ChangeMaxLengthClanName:
+      Names:
+      - maxlengthname
+      - changemaxlengthname
+    ChangeMaxLengthClanTag:
+      Names:
+      - maxlengthtag
+      - changemaxlengthtag
+ClanMenu:
+  Use: true
+  Min-Lines: 5
+  Name: '&5&lClans &7Page'
+  StartsWithOne: true
+  HowToCreateAClanItem:
+    Text: '&cYou are not in a clan. Use%LINE_BREAK%&5/clan create <name> <tag>%LINE_BREAK%&cto
+      create a clan.'
+    ItemData: IRON_CHESTPLATE
+    MetaData: 0
+  ClanInfo:
+    Text: '&5Clan Info:'
+    ItemData: IRON_CHESTPLATE
+    MetaData: 0
+    Lore:
+      Name: '&7Name: &e'
+      ClanTag: '&7Clan Tag: &e'
+      YouAreLeader: '&7You are a leader of this clan.'
+      YouAreMember: '&7You are a member of this clan.'
+    ExecuteCommandOnClick:
+      ExecuteCommandOnClick: true
+      Command: clan stats
+  Players:
+    ClanLeader:
+      Color: '&6'
+      Lore: '&7Clan &5Leader'
+    ClanMember:
+      Color: '&b'
+      Lore: '&7Clan &6Member'
+  LeaveClan:
+    Use: true
+    MetaData: 0
+    Text: '&4Leave your clan.'
+    Place: 2
+    ItemData: BARRIER
+  Placeholder:
+    Use: true
+    Text: ' '
+    MetaData: 15
+    ItemData: BLACK_STAINED_GLASS_PANE
+ClanMemberDetailView:
+  PrefixMember: '&5Clan &6Member: '
+  PrefixLeader: '&5Clan &bLeader: '
+  Size: 27
+  BackItem:
+    Use: true
+    Place: 16
+  MakeLeader:
+    Use: true
+    ItemData: BOOK_AND_QUILL
+    MetaData: 0
+    Text: '&eMakes this player the a leader of this clan'
+    Place: 13
+  Own:
+    AddFriend:
+      Use: true
+      ItemData: PAPER
+      MetaData: 0
+      Text: '&dAdd this player as a friend'
+      Place: 14
+      OnlyViewableForClanLeaders: false
+      Command: friend add %player%
+      BungeeCordCommand: true
+    InviteIntoParty:
+      Use: true
+      ItemData: FIREWORK
+      MetaData: 0
+      Text: '&5Invite this player into a party'
+      Place: 12
+      OnlyViewableForClanLeaders: false
+      Command: party invite %player%
+      BungeeCordCommand: true
+    Example1:
+      Use: false
+      ItemData: STONE
+      MetaData: 0
+      Text: A simple example. Click this command to let the player who is clicking
+        onto the item execute "/bar" command
+      Place: 9
+      OnlyViewableForClanLeaders: false
+      Command: bar
+      BungeeCordCommand: false
+  KickItem:
+    Use: true
+    MetaData: 0
+    Text: '&cKick this player from the clan'
+    Place: 10
+    ItemData: BARRIER
+  Placeholder:
+    Use: true
+    Text: ' '
+    MetaData: 15
+    ItemData: BLACK_STAINED_GLASS_PANE
