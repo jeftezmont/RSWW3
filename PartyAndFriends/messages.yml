@@ -1,1 +1,171 @@
-# To use the messages.yml instead of the default English/German messages activate "General.UseOwnLanguageFile" in the config.
+General:
+  DisabledServer: '&cEste comando no puede ser ejecutado aqui'
+  UnableToConnectToServerRedisBungee: '&cNo fue posible unirse a el servidor'
+Party:
+  Error:
+    CommandNotFound:
+    - '&c¡Este comando no existe!'
+    - '&c¡Este comando no existe!'
+    NoPermission: '&cNo tienes permisos suficientes.'
+  CommandUsage:
+    Join: '&8/&5Party join  &8- &7Unete a una fiesta'
+    Invite: '&8/&5Party invite [Jugador]  &8- &7Invita a un jugador a la fiesta'
+    List: '&8/&5Party list &8- &7Hace una lista de todos los jugadores en la fiesta'
+    Chat: '&8/&5Party chat [Mensaje] &8- &7le envia un mensaje a todos los participantes de la fiesta'
+    Leave: '&8/&5Party leave &8- &7Abandonas la fiesta'
+    Kick: '&8/&5Party kick [Jugador] &8- &7Hecha a el jugador de la fiesta'
+    Leader: '&8/&5Party leader [Jugador]&5 &8- &7Define el nuevo lider de la fiesta'
+  Command:
+    General:
+      ErrorNoParty: '&5Necesitas estar en una fiesta.'
+      ErrorNotPartyLeader: '&cNo eres el lider de la fiesta.'
+      ErrorGivenPlayerIsNotInTheParty: '&cEl jugador &e[PLAYER] &cno se encuentra en la fiesta.'
+      ErrorNoPlayer: '&cNecesitas especificar a un jugador.'
+      ErrorPlayerNotOnline: '&cEste jugador no se encuentra online.'
+      DissolvedPartyCauseOfNotEnoughPlayers: '&c La fiesta ha sido eliminada porque no hay suficientes jugadores.'
+      PlayerHasLeftTheParty: '&bThe player &6[PLAYER] &bha abandonado la fiesta.'
+      ServerSwitched: '&bLa fiesta se ha unido a el servidor &e[SERVER]&b.'
+    Chat:
+      ErrorNoMessage: '&cNecesitas proporcionar un mensaje.'
+      Prefix: '&7[&5FIESTA&7] '
+      ContentColor: '&7'
+      PartyChatOutput: '&e[SENDERNAME]&5:&b[MESSAGE_CONTENT]'
+    Info:
+      Empty: empty
+      PlayersCut: '&7, &b'
+      Leader: '&3Lider&7: &5[LIDER]'
+      Players: '&8Jugadors&7: &b'
+    Invite:
+      GivenPlayerEqualsSender: '&7No puedes invitarte a ti mismo.'
+      CanNotInviteThisPlayer: '&cNo puedes invitar a este jugador a la fiesta.'
+      AlreadyInAParty: '&cEste jugador ya esta en otra fiesta.'
+      AlreadyInYourParty: '&cEl jugador &e[PLAYER] &cya se encuentra en la fiesta.'
+      MaxPlayersInPartyReached: '&cEl maximos de juadores en la fiesta es [MAXPLAYERSINPARTY].'
+      InvitedPlayer: '&6[PLAYER] &bfue invitado a la fiesta.'
+      YouWereInvitedBY: '&aFuiste invitado a la fiesta de &6[PLAYER]!'
+      YouWereInvitedBYJSONMESSAGE: '&aUnete a la fiesta utilizando el comando  &6/Part &6join &6[PLAYER]&5!'
+      YouWereInvitedBYJSONMESSAGEHOVER: '&aHaz click aqui para unirte a la fiesta.'
+      InvitationTimedOutInvited: '&cLa invitacion de la fiesta de &6[PLAYER] &cha expirado'
+      InvitationTimedOutLeader: '&cEl jugador &6[PLAYER] &cno ha acceptado la invitacion!'
+    Join:
+      PlayerHasNoParty: '&cEste jugador no es lider de una fiesta'
+      AlreadyInAPartyError: '&cYa te encuentras en una fiesta, Usa &6/party leave &cpara salirte de la fiesta actual.'
+      PlayerHasJoined: '&bEl jugador &6[PLAYER] &bse ha unido a la fiesta.'
+      ErrorNoInvitation: '&cNo te puedes unir a esta fiesta.'
+    Kick:
+      KickedPlayerOutOfThePartyOthers: '&bEl jugador &6[PLAYER] &bwas ha sido hechado de la fiesta.'
+      KickedPlayerOutOfThePartyKickedPlayer: '&bHaz sido hechado de la fiesta.'
+    Leader:
+      SenderEqualsGivenPlayer: '&7No puedes asignarte lider de la fiesta.'
+      NewLeaderIs: '&7El nuevo lider de la fiesta es &6[NEWLEADER]'
+    Leave:
+      NewLeaderIs: '&bEl lider de la fiesta se ha ido. El nuevo lider es &e[NEWLEADER].'
+      YouLeftTheParty:
+      - '&bHaz abandonado la fiesta.'
+  General:
+    PartyPrefix: '&7[&5Fiesta&7] '
+    HelpBegin: '&8&m-------------------&r&8[&5&lFiesta&8]&m-------------------'
+    HelpEnd: '&8&m---------------------------------------------'
+Friends:
+  General:
+    CommandNotFound:
+    - ' &cEse comando no existe.'
+    NoPermission: ' &cNo tienes permisos para ejecutar este comando.'
+    PlayerIsOffline: ' &7El jugador &e[PLAYER] &7no esta conectado o no es tu amigo.'
+    NotAFriendOfOrOffline: ' &7El jugador &e[PLAYER] &7no esta conectado o no es tu amigo.'
+    NoFriendGiven: ' &7Necesitas especificar tu amigo.'
+    NoPlayerGiven: ' &7Necesitas especificar un jugador.'
+    PlayerIsNowOffline: ' &7Tu amigo &e[PLAYER] &7esta &cDesconectado &7ahora.'
+    PlayerIsNowOnline: ' &7Tu amigo &e[PLAYER] &7esta &cconectado &7ahora.'
+    RequestInfoOnJoin: ' &7Tu &7tienes una peticion de amistad &7de parte &7de: [FRIENDREQUESTS]'
+    DoesNotExist: ' &7El jugador &7No existe'
+    GivenPlayerEqualsSender: ' &7No puedes especificarte como un valor.'
+    Prefix: '&8[&5&lAmigos&8]'
+    HelpBegin: '&8&m-------------------&r&8[&5&lAmigos&8]&m-------------------'
+    HelpEnd: '&8&m-----------------------------------------------'
+    RequestInfoOnJoinColor: '&e'
+    RequestInfoOnJoinColorComma: '&7'
+  CommandUsage:
+    List: '&8/&5friend list &8- &7Lista de todos tus amigos'
+    MSG: '&8/&5friend msg [Nombre de amigo] [mensage]&r &8- &7Enviale un mensaje a tu amigo'
+    ADD: '&8/&5friend add [Nombre de amigo]&r &8- &7Agrega a tu amigo'
+    Accept: '&8/&5friend accept [Nombre de amigo]&r &8- &7Accepta a tu amigo'
+    Deny: '&8/&5friend deny [Nombre de jugador]&r &8- &7No ser amigo con el usuario'
+    Remove: '&8/&5friend &5remove &5[Nombre de amigo]&r &8- &7 Remueves a tu amigo de la lista de amigos'
+    Jump: '&8/&5friend jump [Nombre de amigo]&r &8- &7Salta a un amigo'
+    Settings: '&8/&5friend settings &r&8- &7Cambia tu configuracion'
+  Command:
+    Accept:
+      NowFriends: ' &7Tu y &e[PLAYER] &7ahora son amigos'
+      ErrorNoFriendShipInvitation: ' &7Haz recivido una peticion de amistad de &e[PLAYER]&7.'
+      ErrorSenderEqualsReceiver: ' &7No puedes enviarte un mensaje a tu mismo.'
+      ErrorAlreadySend: ' &7Ya le haz enviado una solicitud de amistad a &e[PLAYER] &7a'
+    Add:
+      SenderEqualsReceiver: ' &7No puedes enviarte a tu mismo una peticion de amistad.'
+      FriendRequestFromReceiver: ' &7El jugador &e[PLAYER] &7ya te ha enviado una solicitud de amistad.'
+      FriendRequestReceived: ' &7Haz recivido una peticion de amistad de parte de &e[PLAYER]&7.'
+      ClickHere: '&aHaz click para acceptar la peticion de amistad'
+      SentAFriendRequest: ' &7El jugador &e[PLAYER] &7ha recivido una peticion de amistad de ti.'
+      CanNotSendThisPlayer: ' &7No puedes enviarle una solicitud de amistad a &e[PLAYER].'
+      HowToAccept: ' &7Acepta la peticion de amistad con &6/friend accept [PLAYER]&7.'
+      AlreadyFriends: ' &7Ya eres amigo de &e[PLAYER].'
+      FriendRequestTimedOut: ' &7La peticion de amistad de &e[PLAYER] &7ha expirado.'
+    Deny:
+      HasDenied: ' &7No haz acceptado la peticion de amistad de &e[PLAYER]s&7.'
+      NoFriendRequest: ' &7No haz recivido una peticion de amistad de parte de &e[PLAYER]&7.'
+    Settings:
+      NowYouCanGetInvitedByEveryone: ' &7Ahora puedes ser invitado a una fiesta por &acualquier usaurio.'
+      NowYouCanGetInvitedByFriends: ' &7Ahora solo puedes ser invitado a una fiesta por &atus amigos.'
+      NowYouAreNotGoneReceiveFriendRequests: ' &cHaz desactivado que te puedan enviar peticiones de amistad.'
+      NowYouAreGoneReceiveFriendRequests: ' &aHaz activado las peticiones de amistad.'
+      NowYouAreNotGoneReceiveMessages: ' &7Ahora no reciviras mas mensajes.'
+      NowYouWillBeShowAsOnline: ' &7Ahora apareceras como &aconectado.'
+      NowYouWilBeShownAsOffline: ' &7Ahora apareceras como &cdesconectado.'
+      NowNoMessages: ' &7Ahora no reciviras mas mensajes.'
+      NowMessages: ' &7Ahora reciviras mas mensajes.'
+      NowYourFriendsCanJump: ' &7Ahora tu amigo puede saltar a el servidor donde te encontras.'
+      NowYourFriendsCanNotJump: ' &7Ahora tus amigos no pueden saltar a el servidor donde te encuentras.'
+      Introduction: ' &7Estas son tus configuraciones:'
+      FriendRequestSettingEveryone: '&7Actualmente reciviras peticiones de amistad de parte de &atodos&7. Para cambiar esto utiliza &6/friend settings friendrequests&7.'
+      FriendRequestSettingNobody: '&7Actualmente &cNo &7recibiras peticiones de amistad. Para cambiar esto utiliza &6/friend settings friendrequests&7.'
+      PartyInvitedByEveryone: '&7Actualmente recibiras invitaciones de fiestas de parte de &atodos&7. Para cambiar esto utiliza &6/friend settings invite&7.'
+      PartyInvitedByFriends: '&7Actualmente recibiras invitaciones de fiestas de parte de &atus amigos&7. Para cambiar esto utiliza &6/friend settings invite&7.&7.'
+      CanJump: '&7Actualemente tus amigos pueden saltar hacia deonde te encuentras. Puedes cambiar esto en &6/friend settings jump&7.'
+      CanNotJump: '&7Actualemente tus amigos &cno &7pueden saltar hacia donde te encuentras. Puedes cambiar esto en &6/friend settings jump&7.'
+      ShowAsOnline: '&7Actualmente apareces &aConectado&7 puedes cambiar esto con &6/friend settings offline&7.'
+      ShowAsOffline: '&7Actualmente apareces &cD&7 puedes cambiar esto con &6/friend settings offline&7.'
+      ReceivePM: '&7Actualemente recives mensajes privados, Puedes cambiar esto usando: &6/friend settings message&7.'
+      DoNotReceivePM: '&7Actualmente no recives mensajes privados, Puedes cambiar esto usando: &6/friend settings message&7.'
+      ChangeThisSettingsHover: '&aClick Aqui para cambiar la configuracion.'
+      NotFound: ' &7La configuracion especificada no fue encontrada.'
+      SplitLine: '&8&m-----------------------------------------------'
+    Jump:
+      AlreadyOnTheServer: ' &7Ya te encuentras en este servidor.'
+      JoinedTheServer: ' &7Ahora estas en el mismo servidor que &e[PLAYER]&7.'
+      CanNotJump: ' &7Esta persona tiene desactivada esta abilidad.'
+    List:
+      NoFriendsAdded: ' &7No tienes amigos actualmente.'
+      FriendsList: ' &7Estos son tus amigos: LINE_BREAK &7- '
+      PageDoesNotExist: ' &7Esta pagina no existe.'
+      NextPage: ' &7Para ver a mas de tus amigos usa /friend list [PAGE].'
+      OnlineTitle: ' &a(Conectado)&7, Actualmente jugando en [SERVER_ON]'
+      OfflineTitle: '&c(Desconectado)&7, visto por ultima vez: [LAST_ONLINE]'
+      TimeColor: '&7'
+      OnlineColor: '&a'
+      OfflineColor: '&c'
+      PlayerSplit: 'LINE_BREAK &7- '
+    MSG:
+      CanNotWriteToHim: ' &7No puedes mandarle un mensaje a este jugador.'
+      NoOneEverWroteToYou: ' &7No haz recivido ningun mensaje anteriormente.'
+      MessageMissing: ' &7Necesitas dar un mensaje.'
+      PlayerWillReceiveMessageOnJoin: ' &7El jugador recivira el mensaje cuando se conecte.'
+      SentMessage: ' &e[SENDERNAME] &b-> &e[PLAYER]&7: [CONTENT]'
+      ColorOfMessage: ' &7'
+    Remove:
+      Removed: ' &cHaz eliminado a tu amigo &e[PLAYER]&7. Ahora ya no son amigos'
+      FriendRemovedYou: ' &e[PLAYER]&7 te ha removido de su lista de amigos.'
+PAFAdmin:
+  Command:
+    DeletePlayer:
+      PlayerDeleted: ' &7Toda la informacion de el jugador &e[PLAYER]&7 fue eliminada.'
+    MustBeExecutedByConsole: '&cEste mensaje solo puede sere ejecutado desde la consola.'
